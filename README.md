@@ -10,5 +10,5 @@ This repository contains the implementation of our IJCNN paper: Multi-view Geome
 ## Code Architecture
 
 - Geometric guidance comprises Ray Embedding, RT Embedding, and Epipolar Cross Attention.
-- The warp function is implemented in `diffusion/gaussian_diffusion.py`, inpainting only the unknown regions and leaving known regions unchanged.
+- The warp function is implemented in `dataset/warp.py`, and the sampling process in `diffusion/gaussian_diffusion.py` inpaints only unknown regions while leaving known regions unchanged.
 - Training, sampling, and model foundation follow the original DiT architecture.
